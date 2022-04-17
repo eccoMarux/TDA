@@ -80,22 +80,19 @@ public class testAuto {
         l = 0;
         System.out.println("Los Autos con servicio full son: ");
         while (autosFull[j] != null && j < cantAutos) {
-            System.out.println("Nombre del propietario: " + autosFull[j].getNombrePropietario() + "\nPatente: "
-                    + autosFull[j].getPatente() + "\nTelefono: " + autosFull[j].getTelefono() + "\n");
+            Auto.toString(autosFull[j]);
             j++;
         }
         System.out.println("");
         System.out.println("Los autos con servicio basica son:");
         while (autosBasica[k] != null && k < cantAutos) {
-            System.out.println("Nombre del propietario: " + autosBasica[k].getNombrePropietario() + "\nPatente: "
-                    + autosBasica[k].getPatente() + "\nTelefono: " + autosBasica[k].getTelefono() + "\n");
+            Auto.toString(autosBasica[k]);
             k++;
         }
         System.out.println("");
-        System.out.println("Los autos con servicio externo");
+        System.out.println("Los autos con servicio externo:");
         while (autosExterno[l] != null && l < cantAutos) {
-            System.out.println("Nombre del propietario: " + autosExterno[l].getNombrePropietario() + "\nPatente: "
-                    + autosExterno[l].getPatente() + "\nTelefono: " + autosExterno[l].getTelefono() + "\n");
+            Auto.toString(autosExterno[l]);
             l++;
         }
     }
