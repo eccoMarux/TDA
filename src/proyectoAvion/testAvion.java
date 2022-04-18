@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class testAvion {
     public static void main(String args[]) {
         // Crea y carga un arreglo del tipo Avion (clase) y dado un menu muestra lo
-        // solicitado.
+        // Solicitado.
         Scanner sc = new Scanner(System.in);
         int cantAviones, posicionArreglo;
         String idAvion, modelo, respuesta;
@@ -12,6 +12,7 @@ public class testAvion {
         Avion aviones[] = new Avion[cantAviones];
         cargarArreglo(aviones);
 
+        //Carga de datos
         System.out.println("------------------------------------------------------------------------\n");
         do {
 
@@ -44,6 +45,7 @@ public class testAvion {
         System.out.println("PROGRAMA TERMINADO.");
 
     }
+
 
     public static int verificarLongitudArreglo() {
         // Verifica si el número ingresado por el usuario es un número válido para la
@@ -117,7 +119,7 @@ public class testAvion {
     }
 
     public static void mostrarAsientos(String idAvion, Avion[] arregloAvion) {
-        //
+        //Muestra la cantidad de asientos del avion en cuestion
         int i = 0;
         boolean continuar = true;
         do {
@@ -130,7 +132,7 @@ public class testAvion {
     }
 
     public static void mostrarCantModelo(String modelo, Avion[] arregloAvion) {
-        //
+        //Muesta el modelo del avion
         int i, longArr, cantModelo = 0;
         longArr = arregloAvion.length;
 
@@ -143,7 +145,7 @@ public class testAvion {
     }
 
     public static void mostrarPromedioKm(Avion[] arregloAvion) {
-        //
+        //Hace un promedio de los km y lo muestra por pantalla
         int i, longArr;
         double totalKm = 0, totalKmRecorridos;
         longArr = arregloAvion.length;
