@@ -52,6 +52,7 @@ public class testAuto {
     }
 
     public static void serviciosContrato(Auto[] arregloAuto, int cantAutos) {
+        //Crea arreglos unidimensionales de cada tipo de servicio y muestra por pantalla cada auto segun el servicio.
         int i, j = 0, k = 0, l = 0, longArr;
         longArr = arregloAuto.length;
 
