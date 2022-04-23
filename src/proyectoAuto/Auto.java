@@ -2,13 +2,13 @@ package proyectoAuto;
 
 public class Auto {
 
-    //Atributos
+    // Atributos
     String patente;
     String nombrePropietario;
     String telefono;
     String servicioContrato;
 
-    //Constructor
+    // Constructor
     public Auto(String laPatente, String elNombrePropietario, String elTelefono, String elServicioContrato) {
         this.patente = laPatente;
         this.nombrePropietario = elNombrePropietario;
@@ -23,7 +23,7 @@ public class Auto {
         this.servicioContrato = " ";
     }
 
-    //Observadores
+    // Observadores
     public String getPatente() {
         return this.patente;
     }
@@ -39,23 +39,25 @@ public class Auto {
     public String getServicioContrato() {
         return this.servicioContrato;
     }
-    
-    //Modificadores
-    public void setTelefono(String elTelefono){
-        this.telefono=elTelefono;
+
+    // Modificadores
+    public void setTelefono(String elTelefono) {
+        this.telefono = elTelefono;
     }
-    
-    public void setServicio(String newServicio){
-        this.servicioContrato=newServicio;
+
+    public void setServicio(String newServicio) {
+        this.servicioContrato = newServicio;
     }
-    
-    //Propias del tipo
-   public boolean igualA(Auto objeto){
-       return (this.patente.equalsIgnoreCase(objeto.getPatente()));
-   }
-   
-   public static void toString(Auto objeto){
-       System.out.println("Nombre del propietario: "+objeto.getNombrePropietario() +"\nPatente: "+ objeto.getPatente() + "\nTelefono: "+objeto.getTelefono() + "\nServicio: "+objeto.getServicioContrato());
-   }
-   
+
+    // Propias del tipo
+    public boolean equals(Auto otraPatente) {
+        return (patente.equalsIgnoreCase(otraPatente.getPatente()));
+    }
+
+    public String toString() {
+        String cadena = "Nombre del propietario: " + this.getNombrePropietario() + "\nPatente: " + this.getPatente()
+                + "\nTelefono: " + this.getTelefono() + "\nServicio: " + this.getServicioContrato();
+        return cadena;
+    }
+
 }
