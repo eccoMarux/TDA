@@ -57,8 +57,8 @@ public class Avion {
     }
 
     // Propias del tipo
-    public boolean equals(Avion otroId) {
-        return (identificador.equalsIgnoreCase(otroId.getIdentificador()));
+    public boolean equals(Avion otroAvion) {
+        return (this.identificador.equalsIgnoreCase(otroAvion.getIdentificador()));
     }
 
     public String toString() {
